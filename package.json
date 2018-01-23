@@ -4,7 +4,7 @@
   "description": "1. Creazione directory progetto 2. copia .gitignore e .gitattributes da react-starter-kit 3. git init 4. git remote add origin https://github.com/kranz/react-boilerplate.git 5. npm init 5. Stage & commit -am \"creazione scheletro iniziale\" 6. git push -u origin master",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/kranz/serio/issues"
   },
-  "homepage": "https://github.com/kranz/serio#readme"
+  "homepage": "https://github.com/kranz/serio#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  }
 }
